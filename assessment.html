@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Governance Assessment | AAGRH</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>AFRICAN AI</span>
+                <strong>GOVERNANCE &amp; RESEARCH HUB</strong>
+            </div>
+
+            <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="assessment.html">Assessment</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="resources.html">Resources</a></li>
+</ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PASTE THE ASSESSMENT SECTION HERE -->
+         <section class="assessment" id="assessment">
+
+    <div class="assessment-heading">
+        <p class="section-label">ORGANISATIONAL SELF-ASSESSMENT</p>
+        <h2>AI Governance Assessment</h2>
+        <p>
+            Understand your organisation's AI practices,
+            identify potential governance risks and discover
+            opportunities for responsible AI adoption.
+        </p>
+    </div>
+
+    <div class="assessment-intro">
+
+        <h3>Organisation Profile</h3>
+
+        <p class="form-description">
+            Before beginning the assessment, tell us a little
+            about your organisation. This information will help
+            us tailor the assessment to your circumstances.
+        </p>
+
+        <form id="assessment-form">
+
+            <!-- QUESTION 1: ORGANISATION NAME -->
+
+            <div class="form-group">
+                <label for="organisation-name">
+                    1. Organisation name
+                </label>
+
+                <input
+                    type="text"
+                    id="organisation-name"
+                    name="organisationName"
+                    placeholder="Enter organisation name (optional)"
+                >
+            </div>
+
+
+            <!-- QUESTION 2: ORGANISATION SIZE -->
+
+            <div class="form-group">
+                <label for="organisation-size">
+                    2. Approximately how many people work in your organisation?
+                </label>
+
+                <select id="organisation-size" name="organisationSize" required>
+                    <option value="">Select organisation size</option>
+                    <option value="1–10 employees">1–10 employees</option>
+                    <option value="11–50 employees">11–50 employees</option>
+                    <option value="51–200 employees">51–200 employees</option>
+                    <option value="201–500 employees">201–500 employees</option>
+                    <option value="More than 500 employees">More than 500 employees</option>
+                </select>
+            </div>
+
+
+            <!-- QUESTION 3: INDUSTRY -->
+
+            <div class="form-group">
+                <label for="organisation-sector">
+                    3. Which industry or sector does your organisation operate in?
+                </label>
+
+                <select id="organisation-sector" name="organisationSector" required>
+                    <option value="">Select your industry</option>
+                    <option value="Financial services and banking">Financial services and banking</option>
+                    <option value="Mining and extractives">Mining and extractives</option>
+                    <option value="Energy and utilities">Energy and utilities</option>
+                    <option value="Healthcare and pharmaceuticals">Healthcare and pharmaceuticals</option>
+                    <option value="Education and research">Education and research</option>
+                    <option value="Technology and telecommunications">Technology and telecommunications</option>
+                    <option value="Government and public administration">Government and public administration</option>
+                    <option value="Legal and professional services">Legal and professional services</option>
+                    <option value="Agriculture and food production">Agriculture and food production</option>
+                    <option value="Retail and consumer services">Retail and consumer services</option>
+                    <option value="Manufacturing and industry">Manufacturing and industry</option>
+                    <option value="Transport and logistics">Transport and logistics</option>
+                    <option value="Media and communications">Media and communications</option>
+                    <option value="NGO and development sector">NGO and development sector</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <input
+                    type="text"
+                    id="other-sector"
+                    name="otherSector"
+                    placeholder="Please specify your sector"
+                    class="conditional-field"
+                    hidden
+                >
+            </div>
+
+
+            <!-- QUESTION 4: ORGANISATION TYPE -->
+
+            <div class="form-group">
+                <label for="organisation-type">
+                    4. What best describes your organisation?
+                </label>
+
+                <select id="organisation-type" name="organisationType" required>
+                    <option value="">Select organisation type</option>
+                    <option value="Private company">Private company</option>
+                    <option value="Public company">Public company</option>
+                    <option value="Government institution">Government institution</option>
+                    <option value="NGO / Non-profit">NGO / Non-profit</option>
+                    <option value="Educational institution">Educational institution</option>
+                    <option value="Start-up">Start-up</option>
+                    <option value="Partnership">Partnership</option>
+                    <option value="Sole proprietorship">Sole proprietorship</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+
+            <!-- QUESTION 5: CURRENT AI USE -->
+
+            <div class="form-group">
+                <label>
+                    5. Does your organisation currently use AI or intend to adopt AI?
+                </label>
+
+                <div class="radio-options">
+
+                    <label>
+                        <input type="radio" name="aiUse" value="Yes, regularly" required>
+                        Yes, regularly
+                    </label>
+
+                    <label>
+                        <input type="radio" name="aiUse" value="Yes, occasionally">
+                        Yes, occasionally
+                    </label>
+
+                    <label>
+                        <input type="radio" name="aiUse" value="Currently exploring AI">
+                        Currently exploring AI
+                    </label>
+
+                    <label>
+                        <input type="radio" name="aiUse" value="Planning to adopt AI">
+                        Planning to adopt AI
+                    </label>
+
+                    <label>
+                        <input type="radio" name="aiUse" value="No">
+                        No
+                    </label>
+
+                    <label>
+                        <input type="radio" name="aiUse" value="Not sure">
+                        Not sure
+                    </label>
+
+                </div>
+            </div>
+
+
+            <!-- QUESTION 6: PURPOSE OF AI USE -->
+
+            <div id="ai-details" class="conditional-section" hidden>
+
+                <div class="form-group">
+
+                    <label>
+                        6. What does your organisation use, or intend to use, AI for?
+                    </label>
+
+                    <p class="field-hint">
+                        Select all activities that apply.
+                    </p>
+
+                    <div class="checkbox-options">
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Recruitment and CV screening">
+                            Recruitment and screening CVs
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Employee performance monitoring">
+                            Employee performance monitoring or evaluation
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Customer service and chatbots">
+                            Customer service and AI chatbots
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Credit scoring and financial assessments">
+                            Credit scoring, lending and financial assessments
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Fraud detection and risk assessment">
+                            Fraud detection and risk assessment
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Data analysis and forecasting">
+                            Data analysis, forecasting and business intelligence
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Marketing and customer profiling">
+                            Marketing, advertising and customer profiling
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Content creation and document preparation">
+                            Content creation, writing and document preparation
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Legal research and contract review">
+                            Legal research, contract review and document analysis
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Healthcare and medical decisions">
+                            Medical diagnosis and healthcare decisions
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Security and surveillance">
+                            Security, surveillance and identity verification
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Automated decision-making">
+                            Automated decision-making affecting individuals
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Other">
+                            Other
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="aiPurpose" value="Exploring potential uses">
+                            We are still exploring potential uses
+                        </label>
+
+                    </div>
+
+                    <input
+                        type="text"
+                        id="other-ai-purpose"
+                        name="otherAiPurpose"
+                        placeholder="Please describe other AI uses"
+                        class="conditional-field"
+                        hidden
+                    >
+
+                </div>
+
+
+                <!-- QUESTION 7: AI DEVELOPMENT -->
+
+                <div class="form-group">
+
+                    <label for="ai-development">
+                        7. How does your organisation obtain or develop AI systems?
+                    </label>
+
+                    <select id="ai-development" name="aiDevelopment">
+                        <option value="">Select an option</option>
+                        <option value="Develops its own AI systems">Develops its own AI systems</option>
+                        <option value="Uses third-party AI tools">Uses externally developed AI tools</option>
+                        <option value="Both">Both develops and uses external AI tools</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUESTION 8: JURISDICTION -->
+
+            <div class="form-group">
+
+                <label for="jurisdiction">
+                    8. Which jurisdiction should this assessment cover?
+                </label>
+
+                <select id="jurisdiction" name="jurisdiction" required>
+
+                    <option value="">Select jurisdiction</option>
+
+                    <option value="zambia">Zambia</option>
+
+                    <option value="south-africa">South Africa</option>
+
+                    <option value="both">Both Zambia and South Africa</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SUBMIT BUTTON -->
+
+            <div class="form-actions">
+
+                <button type="submit" id="start-assessment">
+                    Continue to Assessment
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- FUTURE ASSESSMENT CONTENT -->
+
+    <div id="assessment-questions"></div>
+
+    <div id="assessment-results"></div>
+
+</section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>African AI Governance &amp; Research Hub (AAGRH)</p>
+        <p>Advancing responsible AI governance through African research, policy and practice.</p>
+        <p>Zambia | South Africa</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
